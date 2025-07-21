@@ -1,0 +1,258 @@
+/* Base Font Settings */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Background & Body */
+body {
+  background: linear-gradient(300deg, #eaeeb4, #b0d6e8, #9fe3af);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Profile Image — Perfect Circle */
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 50px;
+}
+
+/* Typography */
+.first-text {
+  color: rgb(46, 46, 224);
+  font-size: 1.5rem;
+  font-family:"Sacramento", cursive ;
+}
+
+.second-text {
+  color: rgb(27, 52, 216);
+  font-family:"Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+
+/* Intro Section */
+.image {
+  text-align: center;
+}
+
+.image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.intro {
+  margin: 2rem auto;
+  max-width: 800px;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Decorative Background */
+.back-ground {
+  background-color: hwb(225 85% 9%);
+  width: 100%;
+  padding: 50px;
+}
+
+/* Skills Section */
+.skill {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.skill-item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr 1fr, 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+  text-align: left;
+}
+
+.skill-img img {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.skill-text p {
+  margin: 0.5rem 0;
+}
+
+/* Contact & Callout */
+.get .paragraph {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  color:  rgb(155, 24, 155);
+}
+
+/* Unified Heading Color */
+.image h2,
+.skill h2,
+.get h2 {
+  color: rgb(46, 46, 224);
+}
+
+/* 📱 Mobile Responsiveness Enhancements */
+@media (max-width: 768px) {
+  .first-text,
+  .second-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    margin-top: 30px;
+  }
+
+  .skill-item {
+    display: block;
+    text-align: center;
+  }
+
+  .skill-img img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .skill-text {
+    text-align: center;
+  }
+
+  .intro {
+    max-width: 95%;
+    font-size: 0.95rem;
+  }
+
+  .back-ground {
+    padding: 30px 10px;
+  }
+
+  .get .paragraph {
+    padding: 0 10px;
+  }
+
+  .contact {
+    padding: 10px;
+  }
+
+  .footer img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .image img {
+    max-width: 260px;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Contact Section */
+.contact {
+  padding: 10px 20px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color:#0d6efd;
+ 
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Utility Elements */
+.dev,
+.wiring {
+  width: 180px;
+  height: auto;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.virtual{
+    width: 50%;
+}
+#profile-img{
+    height: 200px;
+border-radius: 50%;
+margin-top: 50px;
+width: 200px;
+}
+/* bass picture*/
+.dev{
+    border-radius: 50%;
+}
+.footer-text{
+    color: azure;
+    font-family: "Merriweather", serif;
+}
+/*Text background*/
+.text{
+    color: rgb(155, 24, 155);
+    font-family: 'Times New Roman', Times, serif;
+}
+.h3{
+    font-family: "Montserrat", sans-serif;
+}
+.h2{
+    font-family: "Montserrat", sans-serif; 
+}
+
+/*Hr*/
+.hr{
+  border: dotted rgb(120, 170, 120) 6px;
+  border-bottom: none;
+  width: 4%;
+  margin-top: 50px;
+ 
+}
+
+#skills{
+    margin-bottom: 60px;
+    font-family: "Montserrat", sans-serif; 
+}
